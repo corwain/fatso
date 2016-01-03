@@ -1,0 +1,158 @@
+@import "reset";
+@import "mixins";
+
+$black: #212121;
+$white: #FAFAFA;
+$grey: #E0E0E0;
+$blue: #1A0DAB;
+$red: #E64A19;
+
+$pad: 20px;
+$break: 1px dashed $black;
+$card: 1;
+
+body {
+  background-color: $grey;
+  color: $black;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-bottom: $pad/2;
+}
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 16px;
+}
+a {
+  color: $blue;
+  text-decoration: none;
+  &:visited {
+    color: $blue;
+    text-decoration: none;
+  }
+  &:hover {
+    color: $blue;
+    text-decoration: underline;
+  }
+  &:active {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+i {
+  font-style: italic;
+}
+ul {
+  margin-left: $pad+10;
+}
+
+
+.wrapper {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 350px;
+  .container {
+    background-color: $white;
+    margin-top: $pad;
+    padding: $pad/2 $pad $pad/2 $pad;
+    @include card($card);
+    .side-item {
+      padding: $pad/2 $pad/4 $pad/2 $pad/4;
+      margin: 0;
+      border-bottom: $break;
+      .child {
+        padding: $pad/2;
+        margin: 0;
+      }
+    }
+    .last-item {
+      border-bottom: none;
+    }
+    .header {
+      .blog-title {
+        margin-bottom: $pad/4;
+      }
+      .blog-description {
+        margin-bottom: $pad;
+      }
+      .contact {
+        margin: 0;
+        li {
+          display: inline;
+          margin-right: 5px;
+        }
+      }
+    }
+    .work {
+      .portfolio {
+        list-style: inherit;
+      }
+    }
+    .guide {
+      i {
+        cursor: help;
+      }
+      .keys {
+        list-style: decimal;
+      }
+    }
+    .foot {
+      text-align: center;
+      &:hover {
+        .heart {
+          color: $red;
+        }
+      }
+    }
+  }
+}
+
+
+.main {
+  width: 650px;
+  float: right;
+  .container {
+    padding: $pad;
+    .post {
+      background-color: $white;
+      padding: $pad/2 $pad/4 $pad/2 $pad/4;
+      margin-bottom: $pad;
+      @include card($card);
+      .child {
+        position: relative;
+        margin: 0;
+        padding: $pad/2;
+        .content {
+          width: 350px;
+          line-height: 1.25;
+        }
+        .image {
+          position: absolute;
+          right: 0; bottom: 0;
+          width: 150px;
+          height: auto;
+        }
+        .more {
+          line-height: 2;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{{!< default}}
+
+<div class="wrapper">
+
+  <div class="sidebar item">
+    <div class="container">
+
+      <div class="header side-item">
+        <div class="child">
+          <h1 class="blog-title">{{@blog.title}}</h1>
+          <h3 class="blog-description">{{@blog.description}}</h3>
+          <ul class="contact">
+            <li><a href="http://twitter.com/getmicah">Twitter</a></li>
+            <li><a href="http://github.com/getmicah">Github</a></li>
+            <li><a href="mailto:micahcowell99@gmail.com?Subject=Hello,%20Micah&Body=Let's%20Make%20Something%20Awesome...">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="work side-item">
+        <div class="child">
+          <h2>Portfolio</h2>
+          <ul class="portfolio">
+            {{> "navigation"}}
+            <li><a href="http://gif-giving.com" target="_blank">gif-giving.com</a> <i class="credit">(w/ mslk design)</i></li>
+            <li><a href="http://getbool.com" target="_blank">getbool.com</a></li>
+            <li><a href="http://sherikoetting.com" target="_blank">sherikoetting.com</a> <i class="credit">(w/ mslk design)</i></li>
+            <li><a href="http://getpeppers.com" target="_blank">getpeppers.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="guide side-item">
+        <div class="child">
+          <h2>A <i>good</i> website is:</h2>
+          <ul class="keys">
+            <li>Fast</li>
+            <li>Forward</li>
+            <li>Functional</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="foot side-item last-item">
+        <div class="child">
+          <h5>made with <span class="heart">&hearts;</span> and powered by <a href="http://ghost.org" target="_blank">Ghost</a></h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="main item">
+    <div class="container">
+      {{> "loop"}}
+    </div>
+  </div>
+
+</div>

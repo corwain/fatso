@@ -1,0 +1,162 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+MIXINS
+source: http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/
+*/
+body {
+  background-color: #E0E0E0;
+  color: #212121; }
+
+h1, h2, h3, h4, h5 {
+  margin-bottom: 10px; }
+
+h1 {
+  font-size: 42px; }
+
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 20px; }
+
+h5 {
+  font-size: 16px; }
+
+a {
+  color: #1A0DAB;
+  text-decoration: none; }
+  a:visited {
+    color: #1A0DAB;
+    text-decoration: none; }
+  a:hover {
+    color: #1A0DAB;
+    text-decoration: underline; }
+  a:active {
+    color: #1A0DAB;
+    text-decoration: none; }
+
+i {
+  font-style: italic; }
+
+ul {
+  margin-left: 30px; }
+
+.wrapper {
+  position: relative;
+  max-width: 1000px;
+  margin: auto; }
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 350px; }
+  .sidebar .container {
+    background-color: #FAFAFA;
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12); }
+    .sidebar .container .side-item {
+      padding: 10px 5px 10px 5px;
+      margin: 0;
+      border-bottom: 1px dashed #212121; }
+      .sidebar .container .side-item .child {
+        padding: 10px;
+        margin: 0; }
+    .sidebar .container .last-item {
+      border-bottom: none; }
+    .sidebar .container .header .blog-title {
+      margin-bottom: 5px; }
+    .sidebar .container .header .blog-description {
+      margin-bottom: 20px; }
+    .sidebar .container .header .contact {
+      margin: 0; }
+      .sidebar .container .header .contact li {
+        display: inline;
+        margin-right: 5px; }
+    .sidebar .container .work .portfolio {
+      list-style: inherit; }
+    .sidebar .container .guide i {
+      cursor: help; }
+    .sidebar .container .guide .keys {
+      list-style: decimal; }
+    .sidebar .container .foot {
+      text-align: center; }
+      .sidebar .container .foot:hover .heart {
+        color: #E64A19; }
+
+.main {
+  width: 650px;
+  float: right; }
+  .main .container {
+    padding: 20px; }
+    .main .container .post {
+      background-color: #FAFAFA;
+      padding: 10px 5px 10px 5px;
+      margin-bottom: 20px;
+      box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12); }
+      .main .container .post .child {
+        position: relative;
+        margin: 0;
+        padding: 10px; }
+        .main .container .post .child .content {
+          width: 350px;
+          line-height: 1.25; }
+        .main .container .post .child .image {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 150px;
+          height: auto; }
+        .main .container .post .child .more {
+          line-height: 2; }
+
+/*# sourceMappingURL=main.css.map */
