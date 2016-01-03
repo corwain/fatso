@@ -1,17 +1,9 @@
-# Fatso Theme for Ghost
-A clean theme for [Ghost Blog](http://ghost.org)
+# Fatso
+A clean and unique theme for [Ghost](http://ghost.org).
 
+To see it in action, check out the [Demo](http://micahcowell.com)
 
-
-### Getting Started
-This is a theme I built for my personal portfolio website with goals of a unique and clean looking blog.
-
-I wasn't trying to make any fancy but instead just a fast, forward, and functional.
-
-My hope is for you to fork this theme and make your own off it.
-
-[Demo](http://micahcowell.com)
-
+![Fatso](http://chaosartz.com/Casper/Caps/SpookingB/39.jpg)
 
 
 ### Copyright & License
