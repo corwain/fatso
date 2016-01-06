@@ -93,17 +93,51 @@ ul {
 .wrapper {
   position: relative;
   max-width: 1000px;
-  margin: auto; }
+  margin: auto;
+  margin-top: 20px; }
+  @media screen and (max-width: 1100px) {
+    .wrapper {
+      max-width: 750px; } }
+  @media screen and (max-width: 800px) {
+    .wrapper {
+      max-width: none;
+      margin: 40px; } }
+  @media screen and (max-width: 600px) {
+    .wrapper {
+      margin: 20px;
+      margin-top: 40px; } }
+  @media screen and (max-width: 400px) {
+    .wrapper {
+      margin: 0;
+      margin-top: 5px; } }
 
 .sidebar {
   position: fixed;
   height: 100%;
   width: 350px; }
+  @media screen and (max-width: 1100px) {
+    .sidebar {
+      width: 300px; } }
+  @media screen and (max-width: 800px) {
+    .sidebar {
+      position: relative;
+      height: auto;
+      width: 100%; } }
   .sidebar .container {
     background-color: #FAFAFA;
     margin-top: 20px;
     padding: 10px 20px 10px 20px;
     box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12); }
+    @media screen and (max-width: 800px) {
+      .sidebar .container {
+        margin: 20px;
+        padding: 10px;
+        padding-bottom: 0; } }
+    @media screen and (max-width: 400px) {
+      .sidebar .container {
+        margin: 10px;
+        margin-bottom: 20px;
+        padding: 10px; } }
     .sidebar .container .side-item {
       padding: 10px 5px 10px 5px;
       margin: 0;
@@ -111,6 +145,9 @@ ul {
       .sidebar .container .side-item .child {
         padding: 10px;
         margin: 0; }
+      @media screen and (max-width: 800px) {
+        .sidebar .container .side-item {
+          padding: 5px 5px 5px 5px; } }
     .sidebar .container .last-item {
       border-bottom: none; }
     .sidebar .container .header .blog-title {
@@ -124,10 +161,28 @@ ul {
         margin-right: 5px; }
     .sidebar .container .work .portfolio {
       list-style: inherit; }
+    @media screen and (max-width: 800px) {
+      .sidebar .container .work {
+        border-bottom: none;
+        float: left;
+        width: 200px; } }
+    @media screen and (max-width: 600px) {
+      .sidebar .container .work {
+        border-bottom: 1px dashed #212121;
+        float: none;
+        width: auto; } }
     .sidebar .container .guide i {
       cursor: help; }
     .sidebar .container .guide .keys {
       list-style: decimal; }
+    @media screen and (max-width: 800px) {
+      .sidebar .container .guide {
+        border-bottom: none;
+        margin-left: 200px; } }
+    @media screen and (max-width: 600px) {
+      .sidebar .container .guide {
+        border-bottom: 1px dashed #212121;
+        margin-left: 0; } }
     .sidebar .container .foot {
       padding-bottom: 0;
       text-align: center; }
@@ -135,12 +190,32 @@ ul {
         line-height: 1.5; }
       .sidebar .container .foot:hover .heart {
         color: #E64A19; }
+      @media screen and (max-width: 800px) {
+        .sidebar .container .foot {
+          margin-top: 20px;
+          border-top: 1px dashed #212121; } }
+      @media screen and (max-width: 600px) {
+        .sidebar .container .foot {
+          margin-top: 0;
+          border-top: none; } }
 
 .main {
   width: 650px;
   float: right; }
+  @media screen and (max-width: 1100px) {
+    .main {
+      width: 450px; } }
+  @media screen and (max-width: 800px) {
+    .main {
+      width: 100%;
+      float: none; } }
   .main .container {
     padding: 20px; }
+    @media screen and (max-width: 400px) {
+      .main .container {
+        padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 40px; } }
     .main .container .posts {
       background-color: #FAFAFA;
       padding: 10px;
@@ -149,16 +224,24 @@ ul {
       .main .container .posts .child {
         position: relative;
         margin: 0;
-        padding: 10px; }
+        padding: 20px; }
         .main .container .posts .child .content {
           width: 350px;
           line-height: 1.25; }
+          @media screen and (max-width: 800px) {
+            .main .container .posts .child .content {
+              width: 100%; } }
         .main .container .posts .child .image {
           position: absolute;
           right: 0;
           bottom: 0;
           width: 150px;
           height: auto; }
+          @media screen and (max-width: 1100px) {
+            .main .container .posts .child .image {
+              position: relative;
+              right: auto;
+              bottom: auto; } }
         .main .container .posts .child .more {
           line-height: 2; }
     .main .container .pagination {
