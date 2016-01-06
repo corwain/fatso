@@ -114,7 +114,11 @@ ul {
       }
     }
     .foot {
+      padding-bottom: 0;
       text-align: center;
+      .credit {
+        line-height: 1.5;
+      }
       &:hover {
         .heart {
           color: $red;
@@ -130,9 +134,9 @@ ul {
   float: right;
   .container {
     padding: $pad;
-    .post {
+    .posts {
       background-color: $white;
-      padding: $pad/2 $pad/4 $pad/2 $pad/4;
+      padding: $pad/2;
       margin-bottom: $pad;
       @include card($card);
       .child {
@@ -153,6 +157,9 @@ ul {
           line-height: 2;
         }
       }
+    }
+    .pagination {
+      text-align: center;
     }
   }
 }

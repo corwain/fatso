@@ -129,7 +129,10 @@ ul {
     .sidebar .container .guide .keys {
       list-style: decimal; }
     .sidebar .container .foot {
+      padding-bottom: 0;
       text-align: center; }
+      .sidebar .container .foot .credit {
+        line-height: 1.5; }
       .sidebar .container .foot:hover .heart {
         color: #E64A19; }
 
@@ -138,25 +141,27 @@ ul {
   float: right; }
   .main .container {
     padding: 20px; }
-    .main .container .post {
+    .main .container .posts {
       background-color: #FAFAFA;
-      padding: 10px 5px 10px 5px;
+      padding: 10px;
       margin-bottom: 20px;
       box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12); }
-      .main .container .post .child {
+      .main .container .posts .child {
         position: relative;
         margin: 0;
         padding: 10px; }
-        .main .container .post .child .content {
+        .main .container .posts .child .content {
           width: 350px;
           line-height: 1.25; }
-        .main .container .post .child .image {
+        .main .container .posts .child .image {
           position: absolute;
           right: 0;
           bottom: 0;
           width: 150px;
           height: auto; }
-        .main .container .post .child .more {
+        .main .container .posts .child .more {
           line-height: 2; }
+    .main .container .pagination {
+      text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

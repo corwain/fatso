@@ -19,7 +19,7 @@
 
       <div class="work side-item">
         <div class="child">
-          <h2>Portfolio</h2>
+          <h2 class="side-header">Portfolio</h2>
           <ul class="portfolio">
             {{navigation}}
           </ul>
@@ -28,7 +28,7 @@
 
       <div class="guide side-item">
         <div class="child">
-          <h2>A <i>good</i> website is:</h2>
+          <h2 class="side-header">A <i>good</i> website is:</h2>
           <ul class="keys">
             <li>Fast</li>
             <li>Forward</li>
@@ -39,7 +39,8 @@
 
       <div class="foot side-item last-item">
         <div class="child">
-          <h5>made with <span class="heart">&hearts;</span> and powered by <a href="http://ghost.org" target="_blank">Ghost</a></h5>
+          <h5 class="credit">Proudly published with <a href="http://ghost.org">Ghost</a><br>
+              Powered by <a href="https://www.digitalocean.com/?refcode=4fc75aaae91e" target="_blank">DigitalOcean</a></h5>
         </div>
       </div>
 
@@ -49,6 +50,7 @@
   <div class="main item">
     <div class="container">
       {{> "loop"}}
+      {{pagination}}
     </div>
   </div>
 
