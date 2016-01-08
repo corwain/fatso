@@ -84,6 +84,12 @@ a {
     color: #1A0DAB;
     text-decoration: none; }
 
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
 i {
   font-style: italic; }
 
@@ -94,7 +100,8 @@ ul {
   position: relative;
   max-width: 1000px;
   margin: auto;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-bottom: 20px; }
   @media screen and (max-width: 1100px) {
     .wrapper {
       max-width: 750px; } }
@@ -105,11 +112,13 @@ ul {
   @media screen and (max-width: 600px) {
     .wrapper {
       margin: 20px;
-      margin-top: 40px; } }
+      margin-top: 40px;
+      margin-bottom: 40px; } }
   @media screen and (max-width: 400px) {
     .wrapper {
       margin: 0;
-      margin-top: 5px; } }
+      margin-top: 10px;
+      margin-bottom: 10px; } }
 
 .sidebar {
   position: fixed;
@@ -123,6 +132,9 @@ ul {
       position: relative;
       height: auto;
       width: 100%; } }
+  @media screen and (max-height: 600px) and (min-width: 800px) {
+    .sidebar {
+      position: absolute; } }
   .sidebar .container {
     background-color: #FAFAFA;
     margin-top: 20px;
@@ -150,6 +162,9 @@ ul {
           padding: 5px 5px 5px 5px; } }
     .sidebar .container .last-item {
       border-bottom: none; }
+    @media screen and (max-width: 800px) {
+      .sidebar .container .post-item {
+        display: none; } }
     .sidebar .container .header .blog-title {
       margin-bottom: 5px; }
     .sidebar .container .header .blog-description {
@@ -165,7 +180,7 @@ ul {
       .sidebar .container .work {
         border-bottom: none;
         float: left;
-        width: 200px; } }
+        width: 180px; } }
     @media screen and (max-width: 600px) {
       .sidebar .container .work {
         border-bottom: 1px dashed #212121;
@@ -178,7 +193,7 @@ ul {
     @media screen and (max-width: 800px) {
       .sidebar .container .guide {
         border-bottom: none;
-        margin-left: 200px; } }
+        margin-left: 180px; } }
     @media screen and (max-width: 600px) {
       .sidebar .container .guide {
         border-bottom: 1px dashed #212121;
@@ -198,6 +213,14 @@ ul {
         .sidebar .container .foot {
           margin-top: 0;
           border-top: none; } }
+    .sidebar .container .post-foot {
+      border: none;
+      padding-top: none; }
+      .sidebar .container .post-foot .child {
+        padding-top: none; }
+  @media screen and (max-width: 800px) {
+    .sidebar .post-container {
+      padding: 0; } }
 
 .main {
   width: 650px;
@@ -246,5 +269,43 @@ ul {
           line-height: 2; }
     .main .container .pagination {
       text-align: center; }
+
+.post {
+  width: 650px;
+  float: right; }
+  @media screen and (max-width: 1100px) {
+    .post {
+      width: 450px; } }
+  @media screen and (max-width: 800px) {
+    .post {
+      width: 100%;
+      float: none; } }
+  .post .container {
+    background-color: #FAFAFA;
+    margin: 20px;
+    padding: 30px;
+    box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12); }
+    @media screen and (max-width: 800px) {
+      .post .container {
+        padding: 20px;
+        padding-bottom: 0; } }
+    @media screen and (max-width: 400px) {
+      .post .container {
+        margin: 10px;
+        margin-bottom: 20px;
+        padding: 10px; } }
+    .post .container p {
+      padding-bottom: 20px;
+      line-height: 1.5; }
+    .post .container ul {
+      list-style: inherit;
+      padding-bottom: 20px; }
+    .post .container .title {
+      padding-bottom: 10px;
+      border-bottom: 1px dashed #212121; }
+    .post .container .date {
+      padding-top: 5px;
+      font-size: 18px;
+      font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */

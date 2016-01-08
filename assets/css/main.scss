@@ -55,6 +55,12 @@ a {
     text-decoration: none;
   }
 }
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
 i {
   font-style: italic;
 }
@@ -68,6 +74,7 @@ ul {
   max-width: 1000px;
   margin: auto;
   margin-top: $pad;
+  margin-bottom: $pad;
   @media screen and (max-width: $lg) {
     max-width: 750px;
   }
@@ -78,10 +85,12 @@ ul {
   @media screen and (max-width: $sm) {
     margin: $pad;
     margin-top: $pad*2;
+    margin-bottom: $pad*2;
   }
   @media screen and (max-width: $xs) {
     margin: 0;
-    margin-top: $pad/4;
+    margin-top: $pad/2;
+    margin-bottom: $pad/2;
   }
 }
 
@@ -96,6 +105,9 @@ ul {
     position: relative;
     height: auto;
     width: 100%;
+  }
+  @media screen and (max-height: 600px) and (min-width: $md){
+    position: absolute;
   }
   .container {
     background-color: $white;
@@ -127,6 +139,11 @@ ul {
     .last-item {
       border-bottom: none;
     }
+    .post-item {
+      @media screen and (max-width: $md) {
+        display: none;
+      }
+    }
     .header {
       .blog-title {
         margin-bottom: $pad/4;
@@ -149,7 +166,7 @@ ul {
       @media screen and (max-width: $md) {
         border-bottom: none;
         float: left;
-        width: 200px;
+        width: 180px;
       }
       @media screen and (max-width: $sm) {
         border-bottom: $break;
@@ -166,7 +183,7 @@ ul {
       }
       @media screen and (max-width: $md) {
         border-bottom: none;
-        margin-left: 200px;
+        margin-left: 180px;
       }
       @media screen and (max-width: $sm) {
         border-bottom: $break;
@@ -192,6 +209,18 @@ ul {
         margin-top: 0;
         border-top: none;
       }
+    }
+    .post-foot {
+      border: none;
+      padding-top: none;
+      .child {
+        padding-top: none;
+      }
+    }
+  }
+  .post-container {
+    @media screen and (max-width: $md) {
+      padding: 0;
     }
   }
 }
@@ -247,6 +276,50 @@ ul {
     }
     .pagination {
       text-align: center;
+    }
+  }
+}
+
+.post {
+  width: 650px;
+  float: right;
+  @media screen and (max-width: $lg) {
+    width: 450px;
+  }
+  @media screen and (max-width: $md) {
+    width: 100%;
+    float: none;
+  }
+  .container {
+    background-color: $white;
+    margin: $pad;
+    padding: $pad*1.5;
+    @include card($card);
+    @media screen and (max-width: $md) {
+      padding: $pad;
+      padding-bottom: 0;
+    }
+    @media screen and (max-width: $xs) {
+      margin: $pad/2;
+      margin-bottom: $pad;
+      padding: $pad/2;
+    }
+    p {
+      padding-bottom: $pad;
+      line-height: 1.5;
+    }
+    ul {
+      list-style: inherit;
+      padding-bottom: $pad;
+    }
+    .title {
+      padding-bottom: $pad/2;
+      border-bottom: $break;
+    }
+    .date {
+      padding-top: $pad/4;
+      font-size: 18px;
+      font-weight: bold;
     }
   }
 }

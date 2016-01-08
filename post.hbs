@@ -2,11 +2,62 @@
 
 {{#post}}
 
-<div class="post">
-  <div class="container">
-    <h1>{{title}}</h1>
-    <p>{{content}}</p>
+<div class="wrapper">
+
+  <div class="post">
+    <div class="container">
+      <h1 class="title">{{title}}</h1>
+      <span class="date">{{date format="DD MMMM, YYYY"}}</span>
+      <p>{{content}}</p>
+    </div>
   </div>
+
+  <div class="sidebar">
+
+    <div class="container post-container">
+
+      <div class="header side-item post-item">
+        <div class="child">
+          <h1 class="blog-title">{{@blog.title}}</h1>
+          <h3 class="blog-description">{{@blog.description}}</h3>
+          <ul class="contact">
+            <li><a href="http://twitter.com/getmicah">Twitter</a></li>
+            <li><a href="http://github.com/getmicah">Github</a></li>
+            <li><a href="mailto:micahcowell99@gmail.com?Subject=Hello,%20Micah&Body=Let's%20Make%20Something%20Awesome...">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="work side-item inline post-item">
+        <div class="child">
+          <h2 class="side-header">Portfolio</h2>
+          <ul class="portfolio">
+            {{navigation}}
+          </ul>
+        </div>
+      </div>
+
+      <div class="guide side-item inline post-item">
+        <div class="child">
+          <h2 class="side-header">A <i>good</i> website is:</h2>
+          <ul class="keys">
+            <li>Fast</li>
+            <li>Forward</li>
+            <li>Functional</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="foot side-item last-item post-foot">
+        <div class="child">
+          <h5 class="credit">Proudly published with <a href="http://ghost.org" target="_blank">Ghost</a><br>
+              Powered by <a href="https://www.digitalocean.com/?refcode=4fc75aaae91e" target="_blank">DigitalOcean</a></h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </div>
 
 {{/post}}
