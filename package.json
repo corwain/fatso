@@ -1,4 +1,15 @@
 {
   "name": "Fatso",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "license": {
+    "type": "wtfpl",
+    "url": "https://github.com/getmicah/Fatso/raw/master/LICENSE"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/getmicah/Fatso.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
 }

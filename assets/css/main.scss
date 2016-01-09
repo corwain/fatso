@@ -5,7 +5,7 @@ $black: #212121;
 $white: #FAFAFA;
 $grey: #E0E0E0;
 $blue: #1A0DAB;
-$red: #E64A19;
+$green: #006621;
 
 $pad: 20px;
 $break: 1px dashed $black;
@@ -61,14 +61,40 @@ strong {
 em {
   font-style: italic;
 }
+code {
+  display: block;
+  overflow-x: scroll;
+  width: 90%;
+  white-space: nowrap;
+
+  font-family: monospace;
+  background-color: $grey;
+  border-radius: 5px;
+  padding: 2px 5px 2px 5px;
+  margin: auto;
+  border: 1px solid darken( $grey, 10% );
+}
+
 i {
   font-style: italic;
 }
 ul {
   margin-left: $pad+10;
+  li {
+    margin-top: $pad/4;
+  }
 }
 
 
+/*
+##      ## ########     ###    ########
+##  ##  ## ##     ##   ## ##   ##     ##
+##  ##  ## ##     ##  ##   ##  ##     ##
+##  ##  ## ########  ##     ## ########
+##  ##  ## ##   ##   ######### ##
+##  ##  ## ##    ##  ##     ## ##
+ ###  ###  ##     ## ##     ## ##
+ */
 .wrapper {
   position: relative;
   max-width: 1000px;
@@ -94,6 +120,16 @@ ul {
   }
 }
 
+
+/*
+ ######  #### ########  ########
+##    ##  ##  ##     ## ##
+##        ##  ##     ## ##
+ ######   ##  ##     ## ######
+      ##  ##  ##     ## ##
+##    ##  ##  ##     ## ##
+ ######  #### ########  ########
+*/
 .sidebar {
   position: fixed;
   height: 100%;
@@ -196,11 +232,6 @@ ul {
       .credit {
         line-height: 1.5;
       }
-      &:hover {
-        .heart {
-          color: $red;
-        }
-      }
       @media screen and (max-width: $md) {
         margin-top: $pad;
         border-top: $break;
@@ -226,6 +257,16 @@ ul {
 }
 
 
+/*
+
+##     ##    ###    #### ##    ##
+###   ###   ## ##    ##  ###   ##
+#### ####  ##   ##   ##  ####  ##
+## ### ## ##     ##  ##  ## ## ##
+##     ## #########  ##  ##  ####
+##     ## ##     ##  ##  ##   ###
+##     ## ##     ## #### ##    ##
+*/
 .main {
   width: 650px;
   float: right;
@@ -280,6 +321,16 @@ ul {
   }
 }
 
+
+/*
+########   #######   ######  ########
+##     ## ##     ## ##    ##    ##
+##     ## ##     ## ##          ##
+########  ##     ##  ######     ##
+##        ##     ##       ##    ##
+##        ##     ## ##    ##    ##
+##         #######   ######     ##
+*/
 .post {
   width: 650px;
   float: right;
@@ -307,6 +358,7 @@ ul {
     p {
       padding-bottom: $pad;
       line-height: 1.5;
+      word-spacing: 2px;
     }
     ul {
       list-style: inherit;
