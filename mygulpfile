@@ -35,6 +35,7 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('assets/dist'));
 });
 
+
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('assets/js/*.js', ['lint', 'scripts']);
