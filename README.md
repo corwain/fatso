@@ -7,4 +7,4 @@ To see it in action, check out the [Demo](http://micahcowell.com)
 
 
 ### Copyright & License
-You can do whatever you want with this theme.
+[MIT](http://github.com/getmicah/fatso/LICESNSE)
