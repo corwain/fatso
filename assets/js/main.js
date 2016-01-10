@@ -1,4 +1,3 @@
-var x = 4;
-var y = 20;
-
-console.log(x + y);
+// Put some useful Javascript here
+console.log("This is the Fatso theme for Ghost.");
+console.log("http://micahcowell.com");
