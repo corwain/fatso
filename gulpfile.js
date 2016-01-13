@@ -27,7 +27,7 @@ gulp.task('style', function() {
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
-    return gulp.src('assets/js/main.js')
+    return gulp.src('assets/js/*.js')
         .pipe(concat('all.js'))
         .pipe(gulp.dest('assets/dist'))
         .pipe(rename('all.min.js'))

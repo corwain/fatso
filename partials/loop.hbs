@@ -3,8 +3,8 @@
 <div class="posts card">
   <div class="child">
     <h2 class="title">{{title}}</h2>
-    <h5>{{date format="DD MMMM, YYYY"}}</h5>
-    <p class="content">{{excerpt words="36"}}&#8230;</p>
+    <h5 class="date">{{date format="DD MMMM, YYYY"}}</h5>
+    <p class="content">{{excerpt}}&#8230;</p>
     <a class="more" href="{{url}}">Read More &raquo;</a>
     {{#if image}}<img class="image" src="{{image}}" alt="{{title}}">{{/if}}
   </div>
