@@ -1,11 +1,8 @@
-# Fatso
+# Fatso 👻
 A clean and unique theme for [Ghost](http://ghost.org).
 
-To see it in action, check out the [Demo](http://micahcowell.com)
-
-![Fatso](http://vignette2.wikia.nocookie.net/caspersscareschool/images/5/52/Fatso.png/revision/latest?cb=20121006200702)
+To see it in action, check out [my blog](http://micahcowell.com)
 
 
 ### Copyright & License
-[The MIT License (MIT)
-Copyright (c) 2016 Micah Cowell](https://raw.githubusercontent.com/getmicah/Fatso/master/LICENSE)
+[The MIT License (MIT)](https://raw.githubusercontent.com/getmicah/Fatso/master/LICENSE)
