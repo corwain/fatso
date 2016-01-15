@@ -7,4 +7,4 @@ To see it in action, check out the [Demo](http://micahcowell.com)
 
 
 ### Copyright & License
-[MIT](http://github.com/getmicah/fatso/LICESNSE)
+[MIT](https://raw.githubusercontent.com/getmicah/Fatso/master/LICENSE)
