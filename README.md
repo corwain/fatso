@@ -4,6 +4,7 @@ See it in action on [my blog](http://micahcowell.com)
 
 ### Install
 In your Ghost directory:
+
 ' cd content/themes'
 ' git clone https://github.com/getmicah/fatso'
 
