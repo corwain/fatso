@@ -1,8 +1,11 @@
-# Fatso 👻
+# fatso 👻
 A clean and unique theme for [Ghost](http://ghost.org).
+See it in action on [my blog](http://micahcowell.com)
 
-To see it in action, check out [my blog](http://micahcowell.com)
-
+### Install
+In your Ghost directory:
+' cd content/themes'
+' git clone https://github.com/getmicah/fatso'
 
 ### Copyright & License
 [The MIT License (MIT)](https://raw.githubusercontent.com/getmicah/Fatso/master/LICENSE)
