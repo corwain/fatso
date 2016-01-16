@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/getmicah/Fatso.git"
+    "url": "git://github.com/getmicah/fatso.git"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
@@ -17,11 +17,11 @@
     "gulp-uglify": "^1.5.1",
     "jshint": "^2.9.1-rc2"
   },
-  "description": "A clean and unique theme for Ghost.",
+  "description": "A clean and unique theme for ghost.",
   "bugs": {
-    "url": "https://github.com/getmicah/Fatso/issues"
+    "url": "https://github.com/getmicah/fatso/issues"
   },
-  "homepage": "https://github.com/getmicah/Fatso#readme",
+  "homepage": "https://github.com/getmicah/fatso#readme",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp-jshint": "^2.0.0",
