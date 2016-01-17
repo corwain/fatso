@@ -14,5 +14,5 @@ Then go to `http://your-domain.com/ghost`
 
 Settings > General > Themes > ***fatso***
 
-### Copyright & License
+### License
 [MIT License](https://raw.githubusercontent.com/getmicah/Fatso/master/LICENSE) © Micah Cowell
