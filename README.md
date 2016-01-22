@@ -1,4 +1,4 @@
-# fatso 👻
+# fatso
 A clean and unique theme for [Ghost](http://ghost.org).
 
 See it in action on [my blog](http://micahcowell.com)
