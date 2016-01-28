@@ -362,6 +362,8 @@ ul {
     .post .container ul {
       list-style: inherit;
       padding-bottom: 20px; }
+    .post .container img {
+      width: 80%; }
     .post .container .title {
       margin-top: 0;
       padding-bottom: 10px;
